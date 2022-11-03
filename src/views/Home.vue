@@ -24,10 +24,10 @@
           <v-img src="../assets/sectionImg.svg"></v-img>
         </div>
       </v-col>
-      <v-col cols="12" class="pa-10">
+      <v-col cols="12" class="pa-md-10 pa-5">
         <p class="project">OUR PROJECTS</p>
       </v-col>
-      <v-col cols="12" class="pa-10">
+      <v-col cols="12" class="pa-md-10 pa-5">
         <v-row>
           <v-col cols="12" md="6"
             ><div><v-img src="../assets/ourProjectImg.svg"></v-img></div
@@ -51,7 +51,7 @@
         </v-row>
       </v-col>
       <v-divider class="mx-12"></v-divider>
-      <v-col cols="12" class="pa-10">
+      <v-col cols="12" class="pa-md-10 pa-5">
         <v-row>
           <v-col cols="12" md="6" class="py-10 px-md-15 px-5 text-start">
             <p class="text-md-h4 text-h6 font-weight-bold">
@@ -91,7 +91,7 @@
       </v-col>
       <v-divider class="mx-12"></v-divider>
 
-      <v-col cols="12" class="pa-10">
+      <v-col cols="12" class="pa-md-10 pa-5">
         <v-row>
           <v-col cols="12" md="6"
             ><div><v-img src="../assets/ourProjectImg2.svg"></v-img></div
@@ -115,7 +115,7 @@
       <v-divider></v-divider>
       <v-col cols="12" class="px-10 py-5">
         <v-row>
-          <v-col cols="3" class="d-flex align-center justify-center"
+          <v-col cols="12" sm="3" class="d-flex align-center justify-center"
             ><p class="grey--text font-weight-bold text-h5 mb-0">
               Our Partners
             </p></v-col
@@ -128,29 +128,29 @@
               }}</v-carousel-item>
             </v-carousel>
           </v-col> -->
-          <v-col cols="8">
-            <span class="d-md-flex d-none justify-space-around align-center">
+          <v-col cols="12" sm="8">
+            <span class="d-flex justify-space-around align-center">
               <span
                 ><v-img
-                  width="102"
+                  max-width="92"
                   src="https://firebasestorage.googleapis.com/v0/b/mahorat-management.appspot.com/o/M-tech.svg?alt=media&token=96be5352-e34b-4e41-a098-9912d3df6d07"
                 ></v-img
               ></span>
               <span
                 ><v-img
-                  width="102"
+                  width="92"
                   src="https://firebasestorage.googleapis.com/v0/b/mahorat-management.appspot.com/o/UzTea.svg?alt=media&token=a427aaf5-79b2-476f-bfdc-a8fafde20f24"
                 ></v-img
               ></span>
               <span
                 ><v-img
-                  width="102"
+                  width="92"
                   src="https://firebasestorage.googleapis.com/v0/b/mahorat-management.appspot.com/o/Raled.svg?alt=media&token=bed6d923-881a-4e57-ba60-84ef91ccb759"
                 ></v-img
               ></span>
               <span
                 ><v-img
-                  width="102"
+                  width="92"
                   src="https://firebasestorage.googleapis.com/v0/b/mahorat-management.appspot.com/o/ETF.svg?alt=media&token=af759db8-b45a-41de-a5cf-e73d537a6f5c"
                 ></v-img
               ></span>

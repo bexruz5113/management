@@ -42,38 +42,38 @@
       <v-app-bar class="px-0" app color="white" dark height="85">
         <v-container fluid>
           <v-row>
-            <v-col cols="6" md="2" class="text-md-right text-start">
+            <v-col cols="6" md="2" class="text-md-center text-start">
               <router-link to="/" tag="button">
                 <v-img src="./assets/Logo.svg" />
               </router-link>
             </v-col>
             <v-col cols="6" md="10" class="d-flex justify-end align-center">
               <div class="d-md-flex d-none ml-6">
-                <router-link class="black--text text-lg-h6 px-2" to="/about">
+                <router-link class="text-lg-h6 px-2 linkHover" to="/about">
                   {{ $t("navbar.about") }}
                 </router-link>
 
-                <router-link class="black--text text-lg-h6 px-2" to="/services">
+                <router-link class="text-lg-h6 px-2 linkHover" to="/services">
                   {{ $t("navbar.services") }}
                 </router-link>
 
-                <router-link class="black--text text-lg-h6 px-2" to="/projects">
+                <router-link class="text-lg-h6 px-2 linkHover" to="/projects">
                   {{ $t("navbar.projects") }}
                 </router-link>
 
-                <router-link class="black--text text-lg-h6 px-2" to="/experts">
+                <router-link class="text-lg-h6 px-2 linkHover" to="/experts">
                   {{ $t("navbar.experts") }}
                 </router-link>
 
-                <router-link class="black--text text-lg-h6 px-2" to="/apply">
+                <router-link class="text-lg-h6 px-2 linkHover" to="/apply">
                   {{ $t("navbar.apply") }}
                 </router-link>
 
-                <router-link class="black--text text-lg-h6 px-2" to="/new">
+                <router-link class="text-lg-h6 px-2 linkHover" to="/new">
                   {{ $t("navbar.news") }}
                 </router-link>
 
-                <router-link class="black--text text-lg-h6 px-2" to="/contact">
+                <router-link class="text-lg-h6 px-2 linkHover" to="/contact">
                   {{ $t("navbar.contact") }}
                 </router-link>
               </div>
@@ -149,29 +149,33 @@
               </div>
             </v-col>
             <v-col cols="6">
-              <li class="d-md-flex d-none ml-6">
+              <li class="d-md-flex justify-space-around d-none ml-6">
                 <ol>
-                  <router-link class="white--text text-lg-h6" to="/politics">
-                    About us
+                  <router-link class="white--text text-lg-h6" to="/about">
+                    {{ $t("navbar.about") }}
                   </router-link>
                 </ol>
                 <ol>
-                  <router-link class="white--text text-lg-h6" to="/society">
-                    Our Services</router-link
+                  <router-link class="white--text text-lg-h6" to="/services">
+                    {{ $t("navbar.services") }}</router-link
                   >
                 </ol>
 
                 <ol>
-                  <router-link class="white--text text-lg-h6" to="/culture">
-                    Apply</router-link
+                  <router-link class="white--text text-lg-h6" to="/apply">
+                    {{ $t("navbar.apply") }}</router-link
                   >
                 </ol>
                 <ol>
-                  <router-link class="white--text text-lg-h6" to="/sport">
-                    Contact</router-link
+                  <router-link class="white--text text-lg-h6" to="/contact">
+                    {{ $t("navbar.contact") }}</router-link
                   >
                 </ol>
               </li>
+              <div class="white--text text-lg-h6 d-flex justify-center mt-2">
+                <p class="mr-5">Privacy Policy</p>
+                <p class="ml-5">Terms & Conditions</p>
+              </div>
             </v-col>
             <v-col cols="3" class="text-left text-h6">
               <p class="mb-1">Address:</p>
@@ -182,11 +186,15 @@
           </v-row>
         </v-col>
         <!-- responsive -->
-        <v-col cols="12" class="d-lg-none d-block">
+        <v-col cols="12" class="d-lg-none d-block px-15">
           <v-row>
             <v-col cols="12">
               <div class="mb-5">
-                <v-img width="80" src="./assets/footerLogo.svg" />
+                <v-img
+                  width="80"
+                  class="mx-sm-0 mx-auto"
+                  src="./assets/footerLogo.svg"
+                />
               </div>
             </v-col>
             <v-col cols="12">
@@ -267,9 +275,9 @@ export default {
     selectedItem: 0,
     topPoint: 0,
     items: [
-      { flag: "lat", state: "O'zbek", value: "uz-kir", appear: true },
+      { flag: "lat", state: "O'zbek", value: "uz-lat", appear: true },
       { flag: "united-states", state: "English", value: "en", appear: true },
-      { flag: "lat", state: "Ўзбек", value: "uz-lat", appear: true },
+      { flag: "lat", state: "Ўзбек", value: "uz-kir", appear: true },
       { flag: "russia", state: "Russian", value: "ru", appear: true },
     ],
     nav: [
@@ -341,7 +349,6 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  font-family: "Montserrat";
 }
 html {
   scroll-behavior: smooth;
@@ -352,7 +359,12 @@ html {
   box-sizing: border-box;
   text-decoration: none;
 }
-
+.linkHover {
+  color: #000 !important;
+}
+.linkHover:hover {
+  color: #1a237e !important;
+}
 .rocketUp {
   width: 50px;
   height: 50px;
