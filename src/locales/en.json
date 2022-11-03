@@ -1,0 +1,11 @@
+{
+  "navbar": {
+    "about": "About",
+    "services": "Services",
+    "projects": "Projects",
+    "experts": "Experts",
+    "apply": "Apply",
+    "news": "News",
+    "contact": "Contact"
+  }
+}
