@@ -130,29 +130,8 @@
           </v-col> -->
           <v-col cols="12" sm="8">
             <span class="d-flex justify-space-around align-center">
-              <span
-                ><v-img
-                  max-width="92"
-                  src="https://firebasestorage.googleapis.com/v0/b/mahorat-management.appspot.com/o/M-tech.svg?alt=media&token=96be5352-e34b-4e41-a098-9912d3df6d07"
-                ></v-img
-              ></span>
-              <span
-                ><v-img
-                  width="92"
-                  src="https://firebasestorage.googleapis.com/v0/b/mahorat-management.appspot.com/o/UzTea.svg?alt=media&token=a427aaf5-79b2-476f-bfdc-a8fafde20f24"
-                ></v-img
-              ></span>
-              <span
-                ><v-img
-                  width="92"
-                  src="https://firebasestorage.googleapis.com/v0/b/mahorat-management.appspot.com/o/Raled.svg?alt=media&token=bed6d923-881a-4e57-ba60-84ef91ccb759"
-                ></v-img
-              ></span>
-              <span
-                ><v-img
-                  width="92"
-                  src="https://firebasestorage.googleapis.com/v0/b/mahorat-management.appspot.com/o/ETF.svg?alt=media&token=af759db8-b45a-41de-a5cf-e73d537a6f5c"
-                ></v-img
+              <span v-for="(image, index) in images" :key="index"
+                ><v-img max-width="92" :src="image.src"></v-img
               ></span>
             </span>
           </v-col>
@@ -167,6 +146,20 @@ export default {
   data() {
     return {
       information: false,
+      images: [
+        {
+          src: "https://firebasestorage.googleapis.com/v0/b/mahorat-management.appspot.com/o/M-tech.svg?alt=media&token=96be5352-e34b-4e41-a098-9912d3df6d07",
+        },
+        {
+          src: "https://firebasestorage.googleapis.com/v0/b/mahorat-management.appspot.com/o/UzTea.svg?alt=media&token=a427aaf5-79b2-476f-bfdc-a8fafde20f24",
+        },
+        {
+          src: "https://firebasestorage.googleapis.com/v0/b/mahorat-management.appspot.com/o/Raled.svg?alt=media&token=bed6d923-881a-4e57-ba60-84ef91ccb759",
+        },
+        {
+          src: "https://firebasestorage.googleapis.com/v0/b/mahorat-management.appspot.com/o/ETF.svg?alt=media&token=af759db8-b45a-41de-a5cf-e73d537a6f5c",
+        },
+      ],
       items: [
         { ism: "Bexruz" },
         { ism: "Feruz" },
